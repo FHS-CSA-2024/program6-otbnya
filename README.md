@@ -1,36 +1,47 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vAE0Qazl)
-# Program 6
+//import stuff here!
+import java.util.Scanner;
+public class Program6 {
+    public static void main(String[] agrs){
+        //define vars
+        final double pi = 3.14159;
+        double radius = 0;
+        
+        
+        //Create my scanner
+        Scanner DScanner = new Scanner(System.in);
+        
+        //Ask for user input 
+        System.out.println("Enter the radius: ");
+        radius = DScanner.nextDouble();
+        
+        //define var
+        double diameter = 2 * radius;
+        double area = pi * radius * radius;
+        double circumference = 2 * pi * radius;
+        
+        //decimals gone
+        diameter = ((int)((diameter*1000)+0.5))/1000.0;
+        area = ((int)((area*1000)+0.5))/1000.0;
+        circumference = ((int)((circumference*1000)+0.5))/1000.0;
+        
+        //print results
+        System.out.println("The Radius of the circle = " + radius);
+        System.out.println("The Diameter of the circle = " + diameter);
+        System.out.println("The Area of the circle = " + area);
+        System.out.println("The Circumference of the circle = " + circumference);
+        
+    }
+}
+//Your code here
 
-## Program Description:  
-- Write a program to print out the radius, diameter, area, and circumference of a circle.
-- The program should get the radius from the user
-  - Use double as your primative type for the radius  
-- Use a constant definition to store the value of  pi (3.14159).
-- Circumference = 2(pi)Radius or (pi)*Diameter
-- Area = (pi)*Radius<sup>2</sup>
-- Format the output to three decimal places.
-- Choose variable names which are meaningful for this problem.
+//Paste console output below:
+/*
+Enter the radius: 
+3.712
+The Radius of the circle = 3.712
+The Diameter of the circle = 7.424
+The Area of the circle = 43.288
+The Circumference of the circle = 23.323
 
-## Program Data:
-N/A
-
-## Statements Required: 
-- Scanner
-- System.out
-- Variable Assignment
-- Final Variable
-- Variable Operators (Math)
-
-## Sample Output:
->Enter the radius:
->
->3.712
->
->The Radius of the circle =			3.712
->
->The Diameter of the circle =    7.424
->
->The Area of the circle =			41.337
->
->The Circumference of the circle =		22.272
+*/
 
